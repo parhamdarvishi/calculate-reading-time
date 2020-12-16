@@ -1,0 +1,27 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+<hr />
+<section class="section">
+        <div class="container">
+            <div class="level">
+                <h1 class="title is-4 level-item has-text-centered">
+                    Calculate Reading time
+                </h1>
+            </div>
+            <br>
+            <div class="level">
+                <p class="level-left level-item">Type or paste your text to calculate the reading time</p>
+            </div>
+            <div class="level">
+                <textarea class="textarea" (change)="calcRT($event)" placeholder="Add your text ..."></textarea>
+            </div>
+            <div class="level">
+                <div class="level-left">
+                    <p>Reading time:&nbsp;</p>
+                    <p class="has-text-info" id="readingTime">0 min read</p>
+                </div>
+            </div>
+        </div>
+    </section>
